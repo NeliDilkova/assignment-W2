@@ -1,0 +1,35 @@
+---
+title: "Developing Data Products, Assignment week 2"
+author: "Neli Dilkova-Gnoyke"
+date: "27 März 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## My first own Leaflet map
+
+
+---
+title: "Neli's map"
+author: "This is where I work"
+always_allow_html: yes
+---
+
+
+```{r, echo=FALSE, warning=FALSE}
+
+library(leaflet)
+
+
+
+my_map <- leaflet()%>%
+  addTiles()%>%
+  addMarkers(lat=52.50309, lng=13.4499, 
+             popup="Neli Dilkova's Office") 
+             
+my_map
+```
+
